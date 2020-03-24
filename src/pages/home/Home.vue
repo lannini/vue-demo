@@ -16,7 +16,6 @@ export default{
     components:{
         HomeIcons,
         HomeHeader
-
     }
 }
 </script>
