@@ -3,7 +3,6 @@
         <home-header></home-header>
         <home-icons></home-icons>
 
-        <div></div>
     </div>
 </template>
 
