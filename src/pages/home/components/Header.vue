@@ -8,10 +8,12 @@
                 <span class="iconfont ">&#xe744;</span>
                 输入城市/景点/游玩主题
             </div>
+            <router-link to="/city">
             <div class="header-right">
-                城市
+                {{this.city}}
                 <span class="iconfont  arrow-icon">&#xe673;</span>
             </div>
+            </router-link>
         </div>
     </div>
 
@@ -19,7 +21,10 @@
 
 <script>
     export default{
-        name:'HomeHeader'
+        name:'HomeHeader',
+        props:{
+           city:String
+        }
     }
 </script>
 
