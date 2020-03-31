@@ -1,6 +1,6 @@
 <template>
     <div>
-        <home-header :city="city"></home-header>
+        <home-header ></home-header>
         <home-icons :list="iconList"></home-icons>
         <home-recommend :list="recommendList"></home-recommend>
         <home-weekend :list="weekendList"></home-weekend>
@@ -25,7 +25,6 @@ export default{
     },
     data(){
         return{
-            city:'',
             iconList:[],
             recommendList:[],
             weekendList:[]
@@ -40,7 +39,6 @@ export default{
             res = res.data
             if( res.ret && res.data ){
                 const data = res.data
-                this.city = res.data.city
                 this.iconList = data.iconList
                 this.recommendList = data.recommendList
                 this.weekendList = data.weekendList
